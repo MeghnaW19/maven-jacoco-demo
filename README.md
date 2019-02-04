@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/MeghnaW19/maven-jacoco-demo.svg?style=svg)](https://circleci.com/gh/MeghnaW19/maven-jacoco-demo)
+
 # Maven Demo
 
 This repo is for using maven plugins
