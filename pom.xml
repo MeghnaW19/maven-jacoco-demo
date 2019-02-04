@@ -102,6 +102,20 @@
                         </goals>
                     </execution>
                     <execution>
+                        <id>generate-jacoco-badge</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <!--<goal>badge</goal> &lt;!&ndash; Generate a badge from a unified JaCoCo report &ndash;&gt;-->
+                        </goals>
+                        <configuration>
+                            <!-- What coverage level is considered passing? Optional, default 70. -->
+                            <passing>70</passing>
+
+                            <!-- Legal values: instruction, branch, line, method. Optional, default instruction. -->
+                            <metric>instruction</metric>
+                        </configuration>
+                    </execution>
+                    <execution>
                         <id>jacoco-site</id>
                         <phase>package</phase>
                         <goals>
